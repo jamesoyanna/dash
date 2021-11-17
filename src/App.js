@@ -1,18 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import Views from "./views";
+import Dashboard from './pages/Dashboard/Dashboard';
+
 import { Route, Switch } from "react-router-dom";
 
 
 function App() {
   return (
-    <div className="App">
       <Router>
         <Switch>
-          <Route path="/" component={Views} />
+          <Route path="/" component={Dashboard} />
         </Switch>
       </Router>
-    </div>
   );
 }
 
