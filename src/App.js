@@ -1,9 +1,17 @@
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Views from "./views";
+import { Route, Switch } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-     <h2>Oktio Dashboard</h2>
+      <Router>
+        <Switch>
+          <Route path="/" component={Views} />
+        </Switch>
+      </Router>
     </div>
   );
 }
