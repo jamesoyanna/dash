@@ -1,15 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import Dashboard from './pages/Dashboard/Dashboard';
 
 import { Route, Switch } from "react-router-dom";
 
+// Layout
+import Layout from './components/Layout';
 
-function App() {
+// Import scss
+import './assets/scss/theme.scss';
+
+
+const App = props =>  {
+
   return (
       <Router>
         <Switch>
-          <Route path="/" component={Dashboard} />
+          <Route path="/" component={Layout} />
         </Switch>
       </Router>
   );
